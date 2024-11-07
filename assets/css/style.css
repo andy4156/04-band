@@ -1,0 +1,17 @@
+:root {
+    --bs-danger-rgb: 180, 3, 26;
+}
+
+.navbar img {
+    height: 65px;
+}
+
+.navbar > div > div > ul > li > a:hover {
+    background-color:rgb(180, 3, 26) !important;
+} 
+
+@media (min-width: 992px) {
+    .navbar img {
+        height: 135px;
+    }
+}

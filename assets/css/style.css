@@ -1,5 +1,12 @@
-:root {
-    --bs-danger-rgb: 180, 3, 26;
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+p, a, td {
+    font-family: "Bree Serif" !important;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Pirata One" !important;
 }
 
 .navbar img {
@@ -13,6 +20,21 @@
 section.desc img {
     height: 250px;
     width: auto;
+}
+
+section.conc a {
+    background-color: rgb(180, 3, 26) !important;
+    border: rgb(180, 3, 26) !important;
+}
+
+section.conc a:hover {
+    background-color: rgb(149, 3, 22) !important;
+    border: rgb(149, 3, 22) !important;
+}
+
+section.conc table {
+    max-width: 400px;
+    margin: auto;
 }
 
 @media (min-width: 992px) {

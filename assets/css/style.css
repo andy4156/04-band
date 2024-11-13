@@ -5,7 +5,7 @@ p, a, td {
     font-family: "Bree Serif" !important;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, section.desc a {
     font-family: "Pirata One" !important;
 }
 
@@ -22,12 +22,12 @@ section.desc img {
     width: auto;
 }
 
-section.conc a {
+section.conc a, section.contacts button {
     background-color: rgb(180, 3, 26) !important;
     border: rgb(180, 3, 26) !important;
 }
 
-section.conc a:hover {
+section.conc a:hover, section.contacts button:hover {
     background-color: rgb(149, 3, 22) !important;
     border: rgb(149, 3, 22) !important;
 }
@@ -36,6 +36,15 @@ section.conc table {
     max-width: 400px;
     margin: auto;
 }
+
+section.desc a:hover {
+    color: rgb(204, 82, 99);
+}
+
+textarea {
+    resize: none;
+  }
+
 
 footer > .d-flex.gap-4.align-items-center a > svg {
     position: relative;
@@ -48,11 +57,15 @@ footer > .d-flex.gap-4.align-items-center a:hover > svg {
     color: rgb(204, 82, 99);
 }
 
-footer > .d-flex.justify-content-end.gap-4 a {
+footer > .d-flex.justify-content-center.gap-4 a, section.desc a, section.banner a > svg {
     transition: all linear 0.2s;
 }
 
-footer > .d-flex.justify-content-end.gap-4 a:hover {
+section.banner a:hover > svg {
+    color: rgb(204, 82, 99);
+}
+
+footer > .d-flex.justify-content-center.gap-4 a:hover {
     color: rgb(204, 82, 99) !important;
 }
 

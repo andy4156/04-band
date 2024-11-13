@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 
-p, a, td {
+p, a, td, label {
     font-family: "Bree Serif" !important;
 }
 
@@ -45,6 +45,13 @@ textarea {
     resize: none;
   }
 
+section.memb img {
+    height: 300px;
+}
+
+section.memb h2 {
+    font-size: 36px;
+}
 
 footer > .d-flex.gap-4.align-items-center a > svg {
     position: relative;

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 
-p, a, td, label {
+p, a, td, label, section.alb1 h2 {
     font-family: "Bree Serif" !important;
 }
 
@@ -53,31 +53,70 @@ section.memb h2 {
     font-size: 36px;
 }
 
-footer > .d-flex.gap-4.align-items-center a > svg {
+section.alb1 img {
+    height: 250px;
+}
+
+section.alb1 .accordion {
+    width: 300px;
+}
+
+section.alb1 button {
+    font-size: 24px;
+}
+
+section.alb1 .position-absolute.top-50.translate-middle {
+    left: 200px !important;
+    z-index: -1;
+}
+
+.accordion p {
+    padding-bottom: 0.25rem;
+}
+
+/*
+.accordion-button:not(.collapsed) {
+    color: #D97E8A;
+    background-color: #5A020D;
+}
+*/
+
+.hist {
+    max-width: 1000px;
+}
+
+footer > .d-flex.gap-4.justify-content-center.pb-3 a > svg {
     position: relative;
     transition: all linear 0.2s;
 }
 
-footer > .d-flex.gap-4.align-items-center a:hover > svg {
+footer > .d-flex.gap-4.justify-content-center.pb-3 a:hover > svg {
     transform: translateY(-5px);
     scale: 110%;
     color: rgb(204, 82, 99);
 }
 
-footer > .d-flex.justify-content-center.gap-4 a, section.desc a, section.banner a > svg {
+footer > .d-flex.flex-column.flex-lg-row.align-items-center.gap-4.row-gap-2.pb-3 a, section.desc a, section.banner a > svg {
     transition: all linear 0.2s;
 }
 
 section.banner a:hover > svg {
     color: rgb(204, 82, 99);
+    scale: 110%;
 }
 
-footer > .d-flex.justify-content-center.gap-4 a:hover {
+footer > .d-flex.flex-column.flex-lg-row.align-items-center.gap-4.row-gap-2.pb-3 a:hover {
     color: rgb(204, 82, 99) !important;
 }
 
 @media (min-width: 992px) {
     .navbar img {
         height: 110px;
+    }
+
+    section.alb1 .accordion {
+        padding-left: 10rem;
+        padding-top: 0 !important;
+        width: 500px;
     }
 }

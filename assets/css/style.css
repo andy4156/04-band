@@ -31,9 +31,20 @@ section.desc a {
     z-index: 1;
 }
 
+section.banner>div>.position-absolute.start-50.translate-middle.text-center>p,
+section.banner>div>.position-absolute.start-50.translate-middle.text-center>h1 {
+    display: none;
+}
+
+section.banner>div>.position-absolute.start-50.translate-middle.text-center {
+    bottom: -10px;
+}
+
 section.desc .card {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
     z-index: 1;
+    max-width: 500px;
+    margin: auto;
 }
 
 section.desc img {
@@ -67,7 +78,7 @@ textarea {
 }
 
 section.memb img {
-    height: 300px;
+    display: none;
 }
 
 section.memb h2 {
@@ -84,6 +95,10 @@ section.alb1 .accordion {
 
 section.alb1 button {
     font-size: 24px;
+}
+
+section.alb1 p {
+    padding-bottom: 0.3rem;
 }
 
 section.alb1 .sptf.position-absolute {
@@ -132,27 +147,36 @@ section.alb1 .position-absolute.top-50.translate-middle {
     max-width: 1000px;
 }
 
+.mil img {
+    height: 300px;
+    width: 300px;
+}
+
 footer {
     width: 100%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
     padding-top: 1.25rem;
 }
 
-footer>.d-flex.gap-4.justify-content-center.pb-3 a>svg {
+footer>div>.d-flex.gap-4.justify-content-center.pb-3 a>svg {
     position: relative;
     transition: all linear 0.2s;
 }
 
-footer>.d-flex.gap-4.justify-content-center.pb-3 a:hover>svg {
+footer>div>.d-flex.gap-4.justify-content-center.pb-3 a:hover>svg {
     transform: translateY(-5px);
     scale: 110%;
     color: rgb(204, 82, 99);
 }
 
-footer>.d-flex.flex-column.flex-lg-row.align-items-center.gap-4.row-gap-2.pb-3 a,
+footer>div>.d-flex.flex-column.flex-lg-row.align-items-center.gap-4.row-gap-2.pb-3 a,
 section.desc a,
 section.banner a>svg {
     transition: all linear 0.2s;
+}
+
+footer>div>.d-flex.flex-column.flex-lg-row.align-items-center.gap-4.row-gap-2.pb-3 a {
+    text-align: center;
 }
 
 section.banner a:hover>svg {
@@ -160,8 +184,30 @@ section.banner a:hover>svg {
     scale: 110%;
 }
 
-footer>.d-flex.flex-column.flex-lg-row.align-items-center.gap-4.row-gap-2.pb-3 a:hover {
+footer>div>.d-flex.flex-column.flex-lg-row.align-items-center.gap-4.row-gap-2.pb-3 a:hover {
     color: rgb(204, 82, 99) !important;
+}
+
+@media (min-width: 768px) {
+    section.banner>div>.position-absolute.start-50.translate-middle.text-center>p {
+        display: block;
+    }
+
+    section.banner>div>.position-absolute.start-50.translate-middle.text-center {
+        bottom: -60px;
+    }
+
+    section.banner h1 {
+        display: none;
+    }
+
+    section.banner p {
+        font-size: 16px !important;
+    }
+
+    section.banner a {
+        font-size: 20px !important;
+    }
 }
 
 @media (min-width: 992px) {
@@ -173,5 +219,30 @@ footer>.d-flex.flex-column.flex-lg-row.align-items-center.gap-4.row-gap-2.pb-3 a
         padding-left: 10rem;
         padding-top: 0 !important;
         width: 500px;
+    }
+
+    section.memb img {
+        height: 300px;
+        display: block;
+    }
+
+    section.banner>div>.position-absolute.start-50.translate-middle.text-center>h1 {
+        display: block;
+    }
+
+    section.banner>div>.position-absolute.start-50.translate-middle.text-center {
+        bottom: -10px;
+    }
+
+    section.banner h1 {
+        display: block;
+    }
+
+    section.banner p {
+        font-size: 20px !important;
+    }
+
+    section.banner a {
+        font-size: 26px !important;
     }
 }
